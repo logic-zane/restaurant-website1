@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu | IT'shelter</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="images/logo.png" alt="IT'shelter Logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="cart-btn" id="cart-btn">
+        🛒
+        <span class="cart-count" id="cart-count">0</span>
+      </div>
+    </nav>
+  </header>
+
+  <section id="menu">
+    <h1>Our Menu</h1>
+    
+    <div class="menu-category">
+      <h2>Appetizers</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Golden Fries</h3>
+          <p>Crispy french fries with our secret seasoning</p>
+          <p class="price">$5.99</p>
+          <button class="add-to-cart" data-name="Golden Fries" data-price="5.99">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <h3>Spicy Chicken Wings</h3>
+          <p>6 pieces with your choice of sauce (Mild/Hot/Inferno)</p>
+          <p class="price">$8.99</p>
+          <button class="add-to-cart" data-name="Spicy Chicken Wings" data-price="8.99">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <h3>Escargots</h3>
+          <p>Traditional French snails in garlic butter</p>
+          <p class="price">$12.99</p>
+          <button class="add-to-cart" data-name="Escargots" data-price="12.99">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h2>Main Courses</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Artisan Pizza</h3>
+          <p>12" with mozzarella, tomato sauce, and your choice of 3 toppings</p>
+          <p class="price">$14.99</p>
+          <button class="add-to-cart" data-name="Artisan Pizza" data-price="14.99">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <h3>Mexican Tacos</h3>
+          <p>3 soft corn tortillas with seasoned meat, salsa, and fresh veggies</p>
+          <p class="price">$11.99</p>
+          <button class="add-to-cart" data-name="Mexican Tacos" data-price="11.99">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <h3>BBQ Ribs</h3>
+          <p>Full rack with homemade barbecue sauce and coleslaw</p>
+          <p class="price">$18.99</p>
+          <button class="add-to-cart" data-name="BBQ Ribs" data-price="18.99">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h2>Desserts</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Strawberry Cake</h3>
+          <p>Vanilla sponge cake with fresh strawberry topping</p>
+          <p class="price">$7.99</p>
+          <button class="add-to-cart" data-name="Strawberry Cake" data-price="7.99">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Modal -->
+  <div class="cart-modal" id="cart-modal">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="close-cart" id="close-cart">×</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <!-- Cart items will be added here dynamically -->
+    </div>
+    <div class="cart-total">
+      Total: $<span id="cart-total">0.00</span>
+    </div>
+    <div class="cart-actions">
+      <button class="clear-cart" id="clear-cart">Clear Cart</button>
+      <button class="checkout">Checkout</button>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <footer>
+    <p>Follow us: 
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a>
+    </p>
+    <p>Open Hours: Mon-Sat 11:00 AM - 10:00 PM</p>
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>
