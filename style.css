@@ -176,23 +176,7 @@ footer a {
   color: #333;
 }
 
-/* Cart Button Styles */
-.cart-btn {
-  position: relative;
-  cursor: pointer;
-  color: white;
-  font-size: 1.5rem;
-  margin-left: 20px;
-  padding: 5px 10px;
-  background: transparent;
-  border: none;
 
-}
-
-.cart-btn:hover {
-  color: white;
-  background: transparent;
-}
 
 .cart-count {
   position: absolute;
